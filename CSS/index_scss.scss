@@ -1,0 +1,83 @@
+%conteiner{
+    max-width: 625px;
+    margin: 0px auto;
+}
+%conteinertext{
+    max-width: 1100px;
+    margin: 0px auto;
+}
+@import url(../FONTS/MyriadPro/stylesheet.scss);
+body{
+    width: 100%;
+    overflow-x: hidden;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        .header{
+            flex: 0 0 800px;
+            background: url(../IMG/bg.png) 0 0/100% auto no-repeat;
+            background-size: contain;
+            .conteiner{
+                @extend %conteiner;
+                .header__rov{
+                    .header__list{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .header__items{
+                            //display: inline-block;
+                            flex: 0 0 98px;
+                            text-align: center;
+                            font-family: "Myriad Pro";
+                            font-size: 13pt;
+                            text-transform: uppercase;
+                            align-items: center;
+                        }
+                        .header__items_logo{
+                            width: 94px;
+                            height: 85px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            .content__column{
+                .content__about{
+
+                }
+                .content__work{
+
+                }
+                .content__about_twitter{
+
+                }
+                .content__shop{
+
+                }
+                .content__mail{
+
+                }
+            }
+        }
+        .footer{
+            .conteiner{
+                .footer__rov{
+                    .footer__text{
+
+                    }
+                    .footer__socialicons{
+
+                    }
+                    .footer__logo{
+
+                    }
+                }
+            }
+        }
+    }
+}

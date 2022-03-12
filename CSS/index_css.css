@@ -1,0 +1,40 @@
+@import url(../FONTS/MyriadPro/stylesheet.scss);
+body .wrapper .header .conteiner {
+  max-width: 625px;
+  margin: 0px auto;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper .header {
+  flex: 0 0 800px;
+  background: url(../IMG/bg.png) 0 0/100% auto no-repeat;
+  background-size: contain;
+}
+body .wrapper .header .conteiner .header__rov .header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .wrapper .header .conteiner .header__rov .header__list .header__items {
+  flex: 0 0 98px;
+  text-align: center;
+  font-family: "Myriad Pro";
+  font-size: 13pt;
+  text-transform: uppercase;
+  align-items: center;
+}
+body .wrapper .header .conteiner .header__rov .header__list .header__items_logo {
+  width: 94px;
+  height: 85px;
+}
+body .wrapper .header .conteiner .header__rov .header__list .header__items_logo img {
+  width: 100%;
+  height: 100%;
+}
