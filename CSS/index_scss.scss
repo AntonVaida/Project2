@@ -6,7 +6,7 @@
     max-width: 1100px;
     margin: 0px auto;
 }
-@import url(../FONTS/MyriadPro/stylesheet.scss);
+@import "fonts.scss";
 body{
     width: 100%;
     overflow-x: hidden;
@@ -16,7 +16,6 @@ body{
         .header{
             flex: 0 0 800px;
             background: url(../IMG/bg.png) 0 0/100% auto no-repeat;
-            background-size: contain;
             .conteiner{
                 @extend %conteiner;
                 .header__rov{
@@ -25,13 +24,14 @@ body{
                         flex-direction: row;
                         justify-content: space-between;
                         .header__items{
-                            //display: inline-block;
                             flex: 0 0 98px;
                             text-align: center;
-                            font-family: "Myriad Pro";
-                            font-size: 13pt;
+                            font-family: "MYRIADPRO";
+                            font-size: 10pt;
                             text-transform: uppercase;
-                            align-items: center;
+                            line-height: 85px;
+                            font-weight: 400;
+                            letter-spacing: 3pt;
                         }
                         .header__items_logo{
                             width: 94px;

@@ -1,9 +1,4 @@
 @charset "UTF-8";
-body .wrapper .header .conteiner {
-  max-width: 625px;
-  margin: 0px auto;
-}
-
 @font-face {
   font-family: "MYRIADPRO-BOLD";
   src: url("../FONTS/MYRIADPRO-BOLD (1)/.eot");
@@ -31,39 +26,4 @@ body .wrapper .header .conteiner {
   src: local("☺"), url("fonts/MYRIADPRO-SEMIBOLD.woff") format("woff"), url("../FONTS/MYRIADPRO-SEMIBOLD/fonts/MYRIADPRO-SEMIBOLD.ttf") format("truetype"), url("../FONTS/MYRIADPRO-SEMIBOLD/fonts/MYRIADPRO-SEMIBOLD.svg") format("svg");
   font-weight: normal;
   font-style: normal;
-}
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-body .wrapper {
-  display: flex;
-  flex-direction: column;
-}
-body .wrapper .header {
-  flex: 0 0 800px;
-  background: url(../IMG/bg.png) 0 0/100% auto no-repeat;
-}
-body .wrapper .header .conteiner .header__rov .header__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-body .wrapper .header .conteiner .header__rov .header__list .header__items {
-  flex: 0 0 98px;
-  text-align: center;
-  font-family: "MYRIADPRO";
-  font-size: 10pt;
-  text-transform: uppercase;
-  line-height: 85px;
-  font-weight: 400;
-  letter-spacing: 3pt;
-}
-body .wrapper .header .conteiner .header__rov .header__list .header__items_logo {
-  width: 94px;
-  height: 85px;
-}
-body .wrapper .header .conteiner .header__rov .header__list .header__items_logo img {
-  width: 100%;
-  height: 100%;
 }
