@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".//CSS/reset.css">
     <link rel="stylesheet" href=".//CSS/index_css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,12 +15,19 @@
             <div class="conteiner">
                 <div class="header__rov">
                     <ul class="header__list">
-                        <li class="header__items">about us</li>
-                        <li class="header__items">work</li>
+                        <li class="header__items"><a href="">about us</a></li>
+                        <li class="header__items"><a href="">work</a></li>
                         <li class="header__items header__items_logo"><img src="../PROJECT_/IMG/Logo.png" alt="logo"></li>
-                        <li class="header__items">shop</li>
-                        <li class="header__items">contact</li>
+                        <li class="header__items"><a href="">shop</a></li>
+                        <li class="header__items"><a href="">contact</a></li>
                     </ul>
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header__logo header__logo_mobile"><img src="../PROJECT_/IMG/Logo.png" alt="logo"></div>
+                    <div class="header__table"></div>
                 </div>
             </div>
         </div>
@@ -44,3 +52,10 @@
     </div>
 </body>
 </html>
+<script>
+    $(document).ready(function(){
+        $('.header__burger').click(function(even) {
+          $('.header__burger, .header__list, .header__items, .header__items_logo, .header__table, .wrapper').toggleClass('active')
+        });
+    });
+</script>
