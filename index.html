@@ -33,11 +33,73 @@
         </div>
         <div class="content">
             <div class="content__column">
-                <div class="content__about"></div>
-                <div class="content__work"></div>
-                <div class="content__about content__about_twitter"></div>
-                <div class="content__shop"></div>
-                <div class="content__mail"></div>
+                    <section class="content__about content__about_generation">
+                        <div class="conteiner">
+                           <div class="content__logo"><img src="../PROJECT_/IMG/Icon2.png" alt="icon"></div>
+                           <h1>A NEW GENERATION OF VINTAGE BIKE</h1>
+                           <div class="content__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+                        </div>
+                    </section>
+                <section class="content__work">
+                    <div class="content__column">
+                        <div class="content__vintage">
+                            <div class="content__img content__img_vintage">
+                                <img src="../PROJECT_/IMG/2.png" alt="logo" class="content__logo content__logo_vintage">
+                            </div>
+                            <div class="content__vintagecolumn content__vintagecolumn_vintage">
+                                <div class="content__inform content__inform_vintage">
+                                    <div class="content__informlogo content__informlogo_vintage">
+                                        <img src="../PROJECT_/IMG/3.png" alt="logo">
+                                    </div>
+                                    <h1>vintage Oliva</h1>
+                                    <div class="content__informtext content__informtext_vintage">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</div>
+                                </div>
+                                <div class="content__vintageimg">
+                                    <img src="../PROJECT_/IMG/Img 02.png" alt="foto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__vintage content__vintage_boriosa">
+                            <div class="content__img content__img_boriosa">
+                                <img src="./IMG/6.png" alt="logo" class="content__logo content__logo_vintage">
+                            </div>
+                            <div class="content__vintagecolumn content__vintagecolumn_vintage">
+                                <div class="content__inform content__inform_vintage">
+                                    <div class="content__informlogo content__informlogo_vintage">
+                                        <img src="./IMG/5.png" alt="logo">
+                                    </div>
+                                    <h1>La Boriosa</h1>
+                                    <div class="content__informtext content__informtext_vintage">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</div>
+                                </div>
+                                <div class="content__vintageimg">
+                                    <img src="./IMG/7.png" alt="foto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__vintage content__vintage_retro">
+                            <div class="content__img content__img_retrofirst">
+                                <img src="../PROJECT_/IMG/bike3/Logo1.png" alt="logo" class="content__logo content__logo_retro">
+                            </div>
+                            <div class="content__img content__img_retrosecond">
+                            </div>
+                            <div class="content__vintagecolumn content__vintagecolumn_retro">
+                                <div class="content__inform content__inform_retro">
+                                    <div class="content__informlogo content__informlogo_retro">
+                                        <img src="../PROJECT_/IMG/bike3/Icon.png" alt="logo">
+                                    </div>
+                                    <h1>vintage Oliva</h1>
+                                    <div class="content__informtext content__informtext_retro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</div>
+                                </div>
+                                <div class="content__vintageimg content__vintageimg_retro">
+                                    <img src="../PROJECT_/IMG/bike3/Img03.png" alt="foto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="content__about content__about_twitter"></section>
+                <section class="content__shop"></section>
+                <section class="content__about content__about_mail"></section>
             </div>
         </div>
         <div class="footer">
@@ -56,6 +118,7 @@
     $(document).ready(function(){
         $('.header__burger').click(function(even) {
           $('.header__burger, .header__list, .header__items, .header__items_logo, .header__table, .wrapper').toggleClass('active')
+          $('body').toggleClass('lock')
         });
     });
 </script>
