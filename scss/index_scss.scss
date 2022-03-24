@@ -1,0 +1,460 @@
+%conteiner{
+    max-width: 625px;
+    margin: 0px auto;
+}
+%conteinertext{
+    max-width: 1000px;
+    margin: 0px auto;
+}
+@import "fonts.scss";
+body{
+    width: 100%;
+    overflow-x: hidden;
+    &.lock{
+        overflow: hidden;
+     }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        .header{
+            flex: 0 0 100vh;
+            background: url(../IMG/bg.png) center center/cover no-repeat;
+            .conteiner{
+                @extend %conteiner;
+                .header__rov{
+                    .header__list{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .header__items{
+                            flex: 0 0 15%;
+                            font-family: "MYRIADPRO";
+                            font-size: 10pt;
+                            text-transform: uppercase;
+                            line-height: 76.52px;
+                            font-weight: 400;
+                            letter-spacing: 3pt;
+                            text-align: center;
+                        }
+                        a{
+                            color: #551A8B;
+                        }
+                        .header__items_logo{
+                            flex: 0 1 10%;
+                            align-self: center;
+                            padding: 10px 0px 0px 0px;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    } 
+                    
+                   .header__burger{
+                       display: none;
+                    }
+                   .header__logo_mobile{
+                       display: none;
+                    }
+                    .header__table{
+                        display: none;
+                    }  
+                }
+            }
+        }
+        .content{
+            flex: 1 0 auto;
+            .content__column{
+                display: flex;
+                flex-direction: column;
+                .content__about{
+                        flex: 1 0 469px;
+                        &_generation{
+                        }
+                        .conteiner{
+                            @extend %conteinertext;
+                            .content__logo{
+                                width: 53px;
+                                height: 43px;
+                                margin: 70px auto 0px auto;
+                             img{
+                                width: 100%;
+                                height: auto;
+                                }
+                            }
+                            h1{
+                              margin: 30px auto;
+                              text-align: center;
+                              font-family: "MYRIADPRO";
+                              text-transform: uppercase;
+                              font-size: 18pt;
+                              font-weight: 600;
+                              color: #333333;
+                            }
+                            .content__text{
+                              text-align: center;
+                              font-family: "MYRIADPRO";
+                              font-size: 15pt;
+                              color: #33333388;
+                              line-height: 34pt;
+                              margin: 0px 50px 60px 50px;
+                            }
+                        }
+                }
+                .content__work{
+                    flex: 0 0 1800px;
+                    .content__column{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .content__vintage{
+                            flex: 0 0 33.333%;
+                            display: flex;
+                            flex-direction: row;
+                            &_boriosa{
+                                flex-direction: row-reverse;
+                            }
+                            .content__img{
+                                flex: 0 0 66.667%;
+                                position: relative;
+                                background: url(../IMG/Img01.png) center center/cover no-repeat;
+                                &_boriosa{
+                                    background: url(../IMG/8.png) center center/cover no-repeat;
+                                }
+                                &_retrofirst{
+                                    background: url(../IMG/bike3/Img01.png) center center/cover no-repeat;
+                                }
+                                &_retrosecond{
+                                    background: url(../IMG/bike3/Img02.png) center center/cover no-repeat;
+                                }
+                                .content__logo{
+                                    position: relative;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                    z-index: 3;
+                                }
+                            }
+                            .content__vintagecolumn{
+                                flex: 0 0 33.333%;
+                                display: flex;
+                                flex-direction: column;
+                                .content__inform{
+                                    flex: 0 1 66.667%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    padding: 17% 0px 13% 0px;
+                                    .content__informlogo{
+                                        margin: 0px auto 0px auto;
+                                        width: 41px;
+                                        height: 30px;
+                                        img{
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                    h1{
+                                        text-align: center;
+                                        font-family: "MYRIADPRO";
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        color: #333333;
+                                    }
+                                    .content__informtext{
+                                        margin: 0px auto;
+                                        max-width: 60%;
+                                        font-family: "MYRIADPRO";
+                                        font-size: 0.8rem;
+                                        line-height: 1rem;
+                                        color: #333333;
+                                    }
+                                }
+                                .content__vintageimg{
+                                    flex: 0 0 33.333%;
+                                    height: 100%;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .content__vintage_boriosa{
+                            flex: 0 0 33.333%;
+                        }
+                        .content__vintage_retro{
+                            flex: 0 0 33.333%;
+                            display: flex;
+                            flex-direction: row;
+                            .content__img_retrofirst{
+                                flex: 0 0 33.333%;
+                                order: 1;
+                            }
+                            .content__img_retrosecond{
+                                flex: 0 0 33.333%;
+                                order: 3;
+                            }
+                            .content__vintagecolumn_retro{
+                                flex: 0 0 33.333%;
+                                order: 2;
+                                .content__inform_retro{
+                                    .content__informlogo_retro{}
+                                    h1{}
+                                    .content__informtext_retro{}
+                                }
+                                .content__vintageimg_retro{
+                                    img{}
+                                }  
+                            }
+                        }
+                    }
+                }
+                .content__about_twitter{
+                    flex: 1 0 469px;
+                }
+                .content__shop{
+                    flex: 1 0 734px;
+                }
+                .content__mail{
+                    flex: 1 0 469px;
+                }
+            }
+        }
+        .footer{
+            height: 0px;
+            .conteiner{
+                .footer__rov{
+                    .footer__text{
+
+                    }
+                    .footer__socialicons{
+
+                    }
+                    .footer__logo{
+
+                    }
+                }
+            }
+        }
+        @media(max-width: 767px){
+            .header{
+                flex: 0 0 100vh;
+                background: url(../IMG/bg.png) center 0/cover no-repeat;
+                .conteiner{
+                    margin: 0px auto;
+                    padding: 0px 5px 0px 5px;
+                   .header__rov{
+                       .header__list{
+                           display: none;
+                           }
+                       .header__list.active{
+                           position: fixed;
+                           left: 50%;
+                           top: 50%;
+                           transform: translateX(-50%) translateY(-50%);
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: space-between;
+                           height: 70vh;
+                           order: 2;
+                           z-index: 102;
+                           .header__items.active{
+                               position: relative;
+                               flex: 0 0 8%;
+                               font-family: "MYRIADPRO";
+                               font-size: 10pt;
+                               text-transform: uppercase;
+                               line-height: 100%;
+                               font-weight: 400;
+                               letter-spacing: 3pt;
+                               z-index: 2;
+                               a{
+                                   display: inline-block;
+                                   vertical-align: center;
+                                   color: white;
+                                   position: relative;
+                                   top: 50%;
+                                   transform: translateY(-50%);
+                               }   
+                           }
+                           .header__items_logo.active{
+                               height: 15%;
+                               img{
+                                   height: 100%;
+                                   width: auto;
+                               }
+                           }  
+                       }
+                       .header__table.active{
+                           display: block;
+                           position: fixed;
+                           top: 0px;
+                           left: 0px;
+                           height: 100%;
+                           width: 100vw;
+                           background-color: rgba(0, 0, 0, 0.801);
+                           z-index: 100;
+                       }
+                       .header__logo_mobile{
+                           display: inline-flex;
+                           align-self: flex-start;
+                           position: relative;
+                           top: 30px;
+                           height: 40px;
+                           left: 3vw;
+                           img{
+                               width: auto;
+                               height: 100%;
+                           }
+                       }
+                       .header__burger{
+                           display:block;
+                           width: 30px;
+                           height: 40px;
+                           position: fixed;
+                           top: 30px;
+                           right: 3vw;
+                           z-index: 2;
+                           &:active{
+                               width: 40px;
+                               height: 50px;
+                               right: calc(3vw - 5px);
+                               top: 25px;
+                           }
+                           span{
+                               display: block;
+                               width: 80%;
+                               height: 2px;
+                               background-color: #551A8B;
+                               position: absolute;
+                               left: 50%;
+                               top: 50%;
+                               transform: translate(-50%,-50%);
+                               &:nth-child(1){
+                                   left: 50%;
+                                   top: 30%;
+                                   transform: translate(-50%,-50%);
+                               }
+                               &:nth-child(2){
+                                   left: 50%;
+                                   top: 50%;
+                                   transform: translate(-50%,-50%);
+                               }
+                               &:nth-child(3){
+                                   left: 50%;
+                                   top: 70%;
+                                   transform: translate(-50%,-50%);
+                               }
+                            }
+                        }
+                       .header__burger.active{
+                           display:block;
+                           width: 30px;
+                           height: 40px;
+                           position: fixed;
+                           top: 30px;
+                           right: 3vw;
+                           z-index: 102;
+                           &:active{
+                               width: 40px;
+                               height: 50px;
+                               right: calc(3vw - 5px);
+                               top: 25px;
+                           }
+                           span{
+                               display: block;
+                               width: 80%;
+                               height: 2px;
+                               background-color: white;
+                               position: absolute;
+                               left: 50%;
+                               top: 50%;
+                               transform: translate(-50%,-50%);
+                               &:nth-child(1){
+                                   left: 50%;
+                                   top: 50%;
+                                   transform: translate(-50%,-50%) rotate(45deg);
+                                }
+                               &:nth-child(2){
+                                   display: none;
+                                }
+                               &:nth-child(3){
+                                   left: 50%;
+                                   top: 50%;
+                                   transform: translate(-50%,-50%) rotate(-45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .content{
+                .content__column{
+                    .content__about{
+                        flex: 1 1 auto;
+                        .conteiner{
+                            .content__logo{
+                                margin: 40px auto 0px auto;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                  }
+                                }
+                            h1{
+                                margin: 20px auto;
+                                font-size: 12pt;
+                            }
+                            .content__text{
+                                font-size: 9pt;
+                                line-height: 15pt;
+                                margin: 0px 30px 30px 30px;
+                            }
+                        }
+                    }
+                    .content__work{
+                        flex: 1 0 3000px;
+                        .content__column{
+                            display: flex;
+                            flex-direction: column;
+                            .content__vintage{
+                                display: flex;
+                                flex-direction: column;
+                                flex: 1 0 33.333%;
+                                .content__img{
+                                    flex: 0 0 50%;
+                                    height: 100%;
+                                    &_retrofirst{}
+                                    &_retrosecond{}
+                                }
+                                .content__vintagecolumn{
+                                    flex: 1 1 50%;
+                                    .content__inform{
+                                        flex: 1 0 auto;
+                                        .content__informlogo{}
+                                        h1{}
+                                        .content__informtext{}
+                                    }
+                                    .content__vintageimg{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .content__about_twitter{
+                        flex: 1 0 auto;
+                    }
+                    .content__shop{
+                        flex: 1 0 auto;
+                    }
+                    .content__mail{
+                        flex: 1 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
