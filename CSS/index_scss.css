@@ -96,36 +96,38 @@ body .wrapper .content .content__column {
   flex-direction: column;
 }
 body .wrapper .content .content__column .content__about {
-  flex: 1 0 469px;
+  flex: 1 1 auto;
+}
+body .wrapper .content .content__column .content__about .conteiner {
+  font-size: 1.8677vw;
 }
 body .wrapper .content .content__column .content__about .conteiner .content__logo {
-  width: 53px;
-  height: 43px;
-  margin: 70px auto 0px auto;
+  width: 4.24vw;
+  margin: 4em auto 0px auto;
 }
 body .wrapper .content .content__column .content__about .conteiner .content__logo img {
   width: 100%;
   height: auto;
 }
 body .wrapper .content .content__column .content__about .conteiner h1 {
-  margin: 30px auto;
+  margin: 2.5em auto;
   text-align: center;
   font-family: "MYRIADPRO";
   text-transform: uppercase;
-  font-size: 18pt;
+  font-size: 1.8677vw;
   font-weight: 600;
   color: #333333;
 }
 body .wrapper .content .content__column .content__about .conteiner .content__text {
   text-align: center;
   font-family: "MYRIADPRO";
-  font-size: 15pt;
+  font-size: 1.5564vw;
   color: #33333388;
-  line-height: 34pt;
-  margin: 0px 50px 60px 50px;
+  line-height: 1.8em;
+  margin: 0px 4em 4em 4em;
 }
 body .wrapper .content .content__column .content__work {
-  flex: 0 0 1800px;
+  flex: 0 0 200vh;
 }
 body .wrapper .content .content__column .content__work .content__column {
   height: 100%;
@@ -154,12 +156,28 @@ body .wrapper .content .content__column .content__work .content__column .content
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img_retrosecond {
   background: url(../IMG/bike3/Img02.png) center center/cover no-repeat;
 }
-body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img .content__logo {
+body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img .content__cover {
+  opacity: 0;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 110, 92, 0.4);
+  z-index: 2;
+  transition-duration: 1s;
+}
+body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img .content__cover .content__logo {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+  height: 20%;
+  width: auto;
+}
+body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img:hover .content__cover {
+  opacity: 1;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn {
   flex: 0 0 33.333%;
@@ -167,35 +185,36 @@ body .wrapper .content .content__column .content__work .content__column .content
   flex-direction: column;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform {
+  font-size: 1.3vw;
   flex: 0 1 66.667%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 17% 0px 13% 0px;
+  padding: 2em 0px 1.8em 0px;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo {
   margin: 0px auto 0px auto;
-  width: 41px;
-  height: 30px;
+  height: 1.5em;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
+  margin: 0px auto;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform h1 {
   text-align: center;
   font-family: "MYRIADPRO";
-  font-size: 12px;
+  font-size: 1.1vw;
   font-weight: 600;
   text-transform: uppercase;
   color: #333333;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informtext {
   margin: 0px auto;
-  max-width: 60%;
+  max-width: 75%;
   font-family: "MYRIADPRO";
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-size: 1vw;
+  line-height: 1.5em;
   color: #333333;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__vintageimg {
@@ -218,9 +237,55 @@ body .wrapper .content .content__column .content__work .content__column .content
   flex: 0 0 33.333%;
   order: 1;
 }
+body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst .content__cover {
+  opacity: 0;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 110, 92, 0.4);
+  z-index: 2;
+  transition-duration: 1s;
+}
+body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst .content__cover .content__logo_retro {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  height: 10%;
+  width: auto;
+}
+body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst:hover .content__cover {
+  opacity: 1;
+}
 body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond {
   flex: 0 0 33.333%;
   order: 3;
+}
+body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond .content__cover {
+  opacity: 0;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 110, 92, 0.4);
+  z-index: 2;
+  transition-duration: 1s;
+}
+body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond .content__cover .content__logo_retro {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  height: 10%;
+  width: auto;
+}
+body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond:hover .content__cover {
+  opacity: 1;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__vintagecolumn_retro {
   flex: 0 0 33.333%;
@@ -389,30 +454,41 @@ body .wrapper .footer {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
   body .wrapper .content .content__column .content__about {
-    flex: 1 1 auto;
+    flex: 0 0 333.333px;
+    font-size: 1.3vw;
+    padding: 4em 0px 4em 0px;
+  }
+  body .wrapper .content .content__column .content__about .conteiner {
+    height: 100%;
+    font-size: 3vw;
+    margin: 0px auto;
   }
   body .wrapper .content .content__column .content__about .conteiner .content__logo {
-    margin: 40px auto 0px auto;
+    height: 5.5vw;
+    margin: 4em auto 2em auto;
   }
   body .wrapper .content .content__column .content__about .conteiner .content__logo img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
   }
   body .wrapper .content .content__column .content__about .conteiner h1 {
-    margin: 20px auto;
-    font-size: 12pt;
+    font-size: 3vw;
+    margin: 0 auto;
   }
   body .wrapper .content .content__column .content__about .conteiner .content__text {
-    font-size: 9pt;
-    line-height: 15pt;
-    margin: 0px 30px 30px 30px;
+    max-width: 60%;
+    font-size: 2.8vw;
+    line-height: 1.8em;
+    margin: 1em auto 0px auto;
+    text-align: left;
   }
   body .wrapper .content .content__column .content__work {
-    flex: 1 0 3000px;
+    flex: 1 1 2000px;
   }
   body .wrapper .content .content__column .content__work .content__column {
     display: flex;
     flex-direction: column;
+    font-size: 3vw;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage {
     display: flex;
@@ -420,14 +496,45 @@ body .wrapper .footer {
     flex: 1 0 33.333%;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img {
-    flex: 0 0 50%;
+    flex: 1 0 50%;
     height: 100%;
+    width: 100%;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img_retrosecond {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img:hover .content__cover {
+    display: none;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn {
-    flex: 1 1 50%;
+    flex: 0 1 50%;
+    padding: 4em 0px 4em 0px;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform {
     flex: 1 0 auto;
+    display: block;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo {
+    margin: 4em 0px 4em 0px;
+    display: block;
+    height: 5.5vw;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform h1 {
+    font-size: 3vw;
+    margin: 0px auto 2em auto;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informtext {
+    font-size: 2.8vw;
+    line-height: 1.8em;
+    margin: 1em auto 0px auto;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__vintageimg {
     display: none;
