@@ -1,5 +1,5 @@
 %conteiner{
-    max-width: 80%;
+    width: 60%;
     margin: 0px auto;
 }
 %conteinertext{
@@ -10,6 +10,7 @@
 body{
     width: 100%;
     overflow-x: hidden;
+    margin: 0px auto;
     &.lock{
         overflow: hidden;
      }
@@ -26,10 +27,11 @@ body{
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
+                        margin: 2% 0% 0% 0%;
                         .header__items{
                             flex: 0 0 15%;
                             font-family: "MYRIADPRO";
-                            font-size: 1.8677vw;
+                            font-size: 1vw;
                             text-transform: uppercase;
                             font-weight: 400;
                             letter-spacing: 3pt;
@@ -44,12 +46,12 @@ body{
                             transform: translateY(-50%);
                             &:hover{
                                 color: rgba(11, 110, 92, 1);
-                                font-size: 2vw;
+                                font-size: 1.2vw;
                                 transition-duration: 500ms;
                             }
                         }
                         .header__items_logo{
-                            flex: 0 1 10%;
+                            flex: 0 1 5%;
                             align-self: center;
                             padding: 10px 0px 0px 0px;
                             img{
@@ -82,29 +84,29 @@ body{
                             @extend %conteinertext;
                             font-size: 1.8677vw;
                             .content__logo{
-                                width: 4.24vw;
-                                margin: 4em auto 0px auto;
+                                width: 2vw;
+                                margin: 1em auto 0px auto;
                              img{
                                 width: 100%;
                                 height: auto;
                                 }
                             }
                             h1{
-                              margin: 2.5em auto;
+                              margin: 1em auto;
                               text-align: center;
                               font-family: "MYRIADPRO";
                               text-transform: uppercase;
-                              font-size: 1.8677vw;
+                              font-size: 1.2vw;
                               font-weight: 600;
                               color: #333333;
                             }
                             .content__text{
                               text-align: center;
                               font-family: "MYRIADPRO";
-                              font-size: 1.5564vw;
+                              font-size: 1vw;
                               color: #33333388;
-                              line-height: 1.8em;
-                              margin: 0px 4em 4em 4em;
+                              line-height: 1.5em;
+                              margin: 0px 5em 5em 5em;
                             }
                         }
                 }
@@ -150,7 +152,7 @@ body{
                                         left: 50%;
                                         transform: translate(-50%,-50%);
                                         z-index: 3;
-                                        height: 20%;
+                                        height: 10%;
                                         width: auto;
                                     }
                                 }
@@ -170,10 +172,10 @@ body{
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-around;
-                                    padding: 2em 0px 1.8em 0px;
+                                    padding: 2.7em 0px 2.7em 0px;
                                     .content__informlogo{
                                         margin: 0px auto 0px auto;
-                                        height: 1.5em;
+                                        height: 1em;
                                         img{
                                             height: 100%;
                                             width: auto;
@@ -183,7 +185,7 @@ body{
                                     h1{
                                         text-align: center;
                                         font-family: "MYRIADPRO";
-                                        font-size: 1.1vw;
+                                        font-size: 1vw;
                                         font-weight: 600;
                                         text-transform: uppercase;
                                         color: #333333;
@@ -194,7 +196,8 @@ body{
                                         font-family: "MYRIADPRO";
                                         font-size: 1vw;
                                         line-height: 1.5em;
-                                        color: #333333;
+                                        color: #33333388;
+                                        text-align: center;
                                     }
                                 }
                                 .content__vintageimg{
@@ -233,7 +236,7 @@ body{
                                        left: 50%;
                                        transform: translate(-50%,-50%);
                                        z-index: 3;
-                                       height: 10%;
+                                       height: 5%;
                                        width: auto;
                                     }
                                 }
@@ -262,7 +265,7 @@ body{
                                        left: 50%;
                                        transform: translate(-50%,-50%);
                                        z-index: 3;
-                                       height: 10%;
+                                       height: 5%;
                                        width: auto;
                                     }
                                 }
@@ -297,7 +300,332 @@ body{
                     }
                 }
                 .content__shop{
-                    flex: 1 0 734px;
+                    flex: 0 0 80vh;
+                    .shop__column{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .shop__position{
+                            flex: 0 0 60vh;
+                            display: flex;
+                            flex-direction: row;
+                            .position__first{
+                                flex: 0 0 33.333%;
+                                display: flex;
+                                flex-direction: column;
+                                .position__first_top{
+                                    flex: 0 0 50%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    .seats{
+                                        flex: 0 0 50%;
+                                        position: relative;
+                                        .cover{
+                                            opacity: 0;
+                                            position: absolute;
+                                            left: 0px;
+                                            top: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: rgba(11, 110, 92, 0.4);
+                                            z-index: 2;
+                                            transition-duration: 1s;
+                                            img{
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%,-50%);
+                                                z-index: 3;
+                                                height: 10%;
+                                                width: auto;
+                                            }
+                                        }
+                                        &:hover{
+                                            .cover{
+                                                opacity: 1;
+                                            }
+                                        }
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .stend{
+                                        flex: 0 0 50%;
+                                        position: relative;
+                                        .cover{
+                                            opacity: 0;
+                                            position: absolute;
+                                            left: 0px;
+                                            top: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: rgba(11, 110, 92, 0.4);
+                                            z-index: 2;
+                                            transition-duration: 1s;
+                                            img{
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%,-50%);
+                                                z-index: 3;
+                                                height: 10%;
+                                                width: auto;
+                                            }
+                                        }
+                                        &:hover{
+                                            .cover{
+                                                opacity: 1;
+                                            }
+                                        }
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                                .position__first_bottom{
+                                    flex: 0 0 50%;
+                                    position: relative;
+                                    .cover{
+                                        opacity: 0;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgba(11, 110, 92, 0.4);
+                                        z-index: 2;
+                                        transition-duration: 1s;
+                                        img{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            z-index: 3;
+                                            height: 10%;
+                                            width: auto;
+                                        }
+                                    }
+                                    &:hover{
+                                        .cover{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .position__second{
+                                flex: 0 0 33.333%;
+                                display: flex;
+                                flex-direction: row;
+                                .position__second_back{
+                                    flex: 0 0 50%;
+                                    position: relative;
+                                    .cover{
+                                        opacity: 0;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgba(11, 110, 92, 0.4);
+                                        z-index: 2;
+                                        transition-duration: 1s;
+                                        img{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            z-index: 3;
+                                            height: 5%;
+                                            width: auto;
+                                        }
+                                    }
+                                    &:hover{
+                                        .cover{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    img{
+                                        max-width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .position__second_wheel{
+                                    flex: 0 0 50%;
+                                    position: relative;
+                                    .cover{
+                                        opacity: 0;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgba(11, 110, 92, 0.4);
+                                        z-index: 2;
+                                        transition-duration: 1s;
+                                        img{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            z-index: 3;
+                                            height: 5%;
+                                            width: auto;
+                                        }
+                                    }
+                                    &:hover{
+                                        .cover{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    img{
+                                        max-width: 100%;
+                                    }
+                                }
+                            }
+                            .position__third{
+                                flex: 0 0 33.333%;
+                                display: flex;
+                                flex-direction: column;
+                                .position__third_shop{
+                                    flex: 0 0 50%;
+                                    position: relative;
+                                    .cover{
+                                        opacity: 0;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgba(11, 110, 92, 0.4);
+                                        z-index: 2;
+                                        transition-duration: 1s;
+                                        img{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            z-index: 3;
+                                            height: 10%;
+                                            width: auto;
+                                        
+                                        }
+                                    }
+                                    &:hover{
+                                        .cover{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .position__third_bottom{
+                                    flex: 0 0 50%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    .position__third_right{
+                                        flex: 0 0 50%;
+                                        position: relative;
+                                        .cover{
+                                            opacity: 0;
+                                            position: absolute;
+                                            left: 0px;
+                                            top: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: rgba(11, 110, 92, 0.4);
+                                            z-index: 2;
+                                            transition-duration: 1s;
+                                            img{
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%,-50%);
+                                                z-index: 3;
+                                                height: 10%;
+                                                width: auto;
+                                            }
+                                        }
+                                        &:hover{
+                                            .cover{
+                                                opacity: 1;
+                                            }
+                                        }
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .position__third_left{
+                                        flex: 0 0 50%;
+                                        position: relative;
+                                        .cover{
+                                            opacity: 0;
+                                            position: absolute;
+                                            left: 0px;
+                                            top: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: rgba(11, 110, 92, 0.4);
+                                            z-index: 2;
+                                            transition-duration: 1s;
+                                            img{
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%,-50%);
+                                                z-index: 3;
+                                                height: 10%;
+                                                width: auto;
+                                            }
+                                        }
+                                        &:hover{
+                                            .cover{
+                                                opacity: 1;
+                                            }
+                                        }
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .shop__forms{
+                            flex: 0 0 20vh;
+                            background: #282f35;
+                            position: relative;
+                            a{
+                                text-transform: uppercase;
+                                font-family: "MYRIADPRO";
+                                font-size: 1vw;
+                                font-weight: 400;
+                                color: #ffffff;
+                                display: inline-block;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                border: 2px solid #ffffffe7;
+                                padding: 1% 2% 1% 2%;
+                                transition-duration: 1s;
+                                &:hover{
+                                    background-color: #ffffff;
+                                    color: #282f35;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
                 }
                 .content__mail{
                     flex: 1 0 469px;
@@ -382,10 +710,10 @@ body{
                        .header__logo_mobile{
                            display: inline-flex;
                            align-self: flex-start;
-                           position: relative;
+                           position: absolute;
                            top: 30px;
                            height: 40px;
-                           left: 3vw;
+                           left: 3vh;
                            img{
                                width: auto;
                                height: 100%;
@@ -500,12 +828,12 @@ body{
                                 font-size: 2.8vw;
                                 line-height: 1.8em;
                                 margin: 1em auto 0px auto;
-                                text-align: left;
+                                text-align: center;
                             }
                         }
                     }
                     .content__work{
-                        flex: 1 1 2000px;
+                        flex: 1 1 2626px;
                         .content__column{
                             display: flex;
                             flex-direction: column;
@@ -513,14 +841,25 @@ body{
                             .content__vintage{
                                 display: flex;
                                 flex-direction: column;
-                                flex: 1 0 33.333%;
+                                flex: 1 0 28.5714%;
+                                &_retro{
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex: 1 0 42.8571%;
+                                }
                                 .content__img{
                                     flex: 1 0 50%;
                                     height: 100%;
                                     width: 100%;
-                                    &_retrofirst{}
+                                    &_retrofirst{
+                                        flex: 1 0 33.333%;
+                                        height: 100%;
+                                        width: 100%;
+                                    }
                                     &_retrosecond{
-                                        display: none;
+                                        flex: 1 0 33.333%;
+                                        height: 100%;
+                                        width: 100%;
                                     }
                                     &:hover{
                                         .content__cover{
@@ -531,6 +870,10 @@ body{
                                 .content__vintagecolumn{
                                     flex: 0 1 50%;
                                     padding: 4em 0px 4em 0px;
+                                    &_retro{
+                                        flex: 0 1 33.333%;
+                                        padding: 4em 0px 4em 0px;
+                                    }
                                     .content__inform{
                                         flex: 1 0 auto;
                                         display: block;
@@ -565,10 +908,43 @@ body{
                         }
                     }
                     .content__about_twitter{
-                        flex: 1 0 auto;
+                        flex: 0 0 333.333px;
+                        font-size: 1.3vw;
+                        padding: 0em 0px 0em 0px;
+                        .conteiner{
+                            height: 100%;
+                            font-size: 3vw;
+                            margin: 0px auto;
+                            padding: 6em 0em;
+                            .content__logo{
+                                height: 5.5vw;
+                                margin: 2em auto 2em auto;
+                                img{
+                                    height: 100%;
+                                    width: auto;
+                                  }
+                                }
+                            h1{
+                                font-size: 3vw;
+                                margin: 0 auto;
+                            }
+                            .content__text{
+                                width: 90%;
+                                font-size: 2.8vw;
+                                line-height: 1.8em;
+                                margin: 1em auto 0px auto;
+                                text-align: center;
+                            }
+                        }
+
                     }
                     .content__shop{
-                        flex: 1 0 auto;
+                        flex: 1 0 1100px;
+                        .shop__column{
+                            .shop__position{
+                                flex-direction: column;
+                            }
+                        }
                     }
                     .content__mail{
                         flex: 1 0 auto;
