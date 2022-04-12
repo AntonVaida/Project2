@@ -1,11 +1,6 @@
 @charset "UTF-8";
-body .wrapper .header .conteiner {
+body .wrapper .footer .conteiner, body .wrapper .header .conteiner {
   width: 60%;
-  margin: 0px auto;
-}
-
-body .wrapper .content .content__column .content__about .conteiner {
-  max-width: 60%;
   margin: 0px auto;
 }
 
@@ -107,38 +102,46 @@ body .wrapper .content .content__column {
   flex-direction: column;
 }
 body .wrapper .content .content__column .content__about {
-  flex: 1 1 auto;
+  flex: 0 0 666.666px;
+  position: relative;
 }
 body .wrapper .content .content__column .content__about .conteiner {
-  font-size: 1.8677vw;
+  width: 750px;
+  height: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 body .wrapper .content .content__column .content__about .conteiner .content__logo {
-  width: 2vw;
-  margin: 1em auto 0px auto;
+  width: 40px;
+  margin: 0em auto;
 }
 body .wrapper .content .content__column .content__about .conteiner .content__logo img {
   width: 100%;
   height: auto;
 }
 body .wrapper .content .content__column .content__about .conteiner h1 {
-  margin: 1em auto;
+  margin: 0em auto;
   text-align: center;
   font-family: "MYRIADPRO";
   text-transform: uppercase;
-  font-size: 1.2vw;
+  font-size: 24px;
   font-weight: 600;
   color: #333333;
 }
 body .wrapper .content .content__column .content__about .conteiner .content__text {
   text-align: center;
   font-family: "MYRIADPRO";
-  font-size: 1vw;
+  font-size: 18px;
   color: rgba(51, 51, 51, 0.5333333333);
-  line-height: 1.5em;
-  margin: 0px 5em 5em 5em;
+  line-height: 1.8em;
 }
 body .wrapper .content .content__column .content__work {
-  flex: 0 0 200vh;
+  flex: 0 0 2000px;
 }
 body .wrapper .content .content__column .content__work .content__column {
   height: 100%;
@@ -194,18 +197,19 @@ body .wrapper .content .content__column .content__work .content__column .content
   flex: 0 0 33.333%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform {
-  font-size: 1.3vw;
   flex: 0 1 66.667%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 2.7em 0px 2.7em 0px;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 85px 0px;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo {
   margin: 0px auto 0px auto;
-  height: 1em;
+  height: 30px;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo img {
   height: 100%;
@@ -215,23 +219,25 @@ body .wrapper .content .content__column .content__work .content__column .content
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform h1 {
   text-align: center;
   font-family: "MYRIADPRO";
-  font-size: 1vw;
+  font-size: 19px;
+  line-height: 21px;
   font-weight: 600;
   text-transform: uppercase;
   color: #333333;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informtext {
   margin: 0px auto;
-  max-width: 75%;
+  width: 400px;
   font-family: "MYRIADPRO";
-  font-size: 1vw;
-  line-height: 1.5em;
+  font-size: 15px;
+  line-height: 1.8em;
   color: rgba(51, 51, 51, 0.5333333333);
   text-align: center;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__vintageimg {
   flex: 0 0 33.333%;
   height: 100%;
+  width: 100%;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__vintageimg img {
   width: 100%;
@@ -244,6 +250,7 @@ body .wrapper .content .content__column .content__work .content__column .content
   flex: 0 0 33.333%;
   display: flex;
   flex-direction: row;
+  width: 100vw;
 }
 body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst {
   flex: 0 0 33.333%;
@@ -303,13 +310,13 @@ body .wrapper .content .content__column .content__work .content__column .content
   flex: 0 0 33.333%;
   order: 2;
 }
-body .wrapper .content .content__column .content__about_twitter h1 span {
+body .wrapper .content .content__column .content__about_twitter .conteiner h1 span {
   font-size: 1.6vw;
   font-weight: 300;
   color: #333333;
 }
 body .wrapper .content .content__column .content__shop {
-  flex: 0 0 80vh;
+  flex: 0 0 666.666px;
 }
 body .wrapper .content .content__column .content__shop .shop__column {
   height: 100%;
@@ -595,7 +602,7 @@ body .wrapper .content .content__column .content__shop .shop__column .shop__posi
   height: 100%;
 }
 body .wrapper .content .content__column .content__shop .shop__column .shop__forms {
-  flex: 0 0 20vh;
+  flex: 0 0 150px;
   background: #282f35;
   position: relative;
 }
@@ -619,13 +626,154 @@ body .wrapper .content .content__column .content__shop .shop__column .shop__form
   color: #282f35;
   border: none;
 }
-body .wrapper .content .content__column .content__mail {
-  flex: 1 0 469px;
+body .wrapper .content .content__column .content__about_mail {
+  flex: 0 0 450px;
+  position: relative;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33.333%;
+  height: 65%;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__logo {
+  width: 3vw;
+  margin: 3% auto 0% auto;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__logo img {
+  width: 100%;
+  height: auto;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__text {
+  text-align: center;
+  font-family: "MYRIADPRO";
+  font-size: 1.6vw;
+  font-weight: 300;
+  color: rgba(51, 51, 51, 0.862745098);
+  margin: 2% 0% 0% 0%;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms {
+  height: 6vh;
+  display: block;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div .mail__e-mail {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 69%;
+  height: 100%;
+  border-radius: 3%;
+  background: #f0efef;
+  color: #333333;
+  font-family: "MYRIADPRO";
+  font-weight: 300;
+  box-shadow: -1px 2px 20px -1px rgba(0, 0, 0, 0.4);
+  font-size: 1.1vw;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div .mail__e-mail::placeholder {
+  position: relative;
+  left: 3%;
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30%;
+  border-radius: 3%;
+  height: 100%;
+  background: rgba(11, 110, 92, 0.4);
+  color: #ffffff;
+  font-family: "MYRIADPRO";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.6vw;
+  transition-duration: 1s;
+  box-shadow: -1px 2px 20px -1px rgba(0, 0, 0, 0.4);
+}
+body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div button:hover {
+  background: rgb(11, 110, 92);
 }
 body .wrapper .footer {
-  height: 0px;
+  flex: 0 0 200px;
 }
-@media (max-width: 767px) {
+body .wrapper .footer .conteiner {
+  height: 100%;
+}
+body .wrapper .footer .conteiner .footer__rov {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__text {
+  flex: 0 0 33.333%;
+  text-align: left;
+  align-items: center;
+  font-family: "MYRIADPRO";
+  font-size: 1vw;
+  color: rgba(51, 51, 51, 0.5333333333);
+}
+body .wrapper .footer .conteiner .footer__rov .footer__socialicons {
+  flex: 0 0 33.333%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0% 10% 0% 10%;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__twitter {
+  width: 2vw;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__twitter img {
+  height: auto;
+  width: 100%;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__facebook {
+  width: 2vw;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__facebook img {
+  height: auto;
+  width: 100%;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__pinterest {
+  width: 2vw;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__pinterest img {
+  height: auto;
+  width: 100%;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__logo {
+  flex: 0 0 33.333%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__text {
+  line-height: 2vw;
+  margin: 0% 2% 0% 0%;
+  font-family: "MYRIADPRO";
+  font-size: 1vw;
+  color: rgba(51, 51, 51, 0.5333333333);
+}
+body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__logo {
+  height: 2vw;
+}
+body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__logo img {
+  height: 100%;
+  width: auto;
+}
+@media (max-width: 721px) {
   body .wrapper .header {
     flex: 0 0 100vh;
     background: url(../IMG/bg.png) center 0/cover no-repeat;
@@ -721,6 +869,7 @@ body .wrapper .footer {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition-duration: 700ms;
   }
   body .wrapper .header .conteiner .header__rov .header__burger span:nth-child(1) {
     left: 50%;
@@ -777,41 +926,38 @@ body .wrapper .footer {
   }
   body .wrapper .content .content__column .content__about {
     flex: 0 0 333.333px;
-    font-size: 1.3vw;
-    padding: 0em 0px 0em 0px;
   }
   body .wrapper .content .content__column .content__about .conteiner {
-    height: 100%;
-    font-size: 3vw;
-    margin: 0px auto;
-    padding: 2em 0em;
+    height: 200px;
+    width: 270px;
+    margin: auto auto;
   }
   body .wrapper .content .content__column .content__about .conteiner .content__logo {
-    height: 5.5vw;
-    margin: 2em auto 2em auto;
+    height: 22px;
+    margin: 0em auto 1em auto;
   }
   body .wrapper .content .content__column .content__about .conteiner .content__logo img {
     height: 100%;
     width: auto;
   }
   body .wrapper .content .content__column .content__about .conteiner h1 {
-    font-size: 3vw;
+    font-size: 12px;
     margin: 0 auto;
+    line-height: 14px;
   }
   body .wrapper .content .content__column .content__about .conteiner .content__text {
-    width: 90%;
-    font-size: 2.8vw;
+    width: 100%;
+    font-size: 10px;
     line-height: 1.8em;
     margin: 1em auto 0px auto;
     text-align: center;
   }
   body .wrapper .content .content__column .content__work {
-    flex: 1 1 2626px;
+    flex: 0 0 2626px;
   }
   body .wrapper .content .content__column .content__work .content__column {
     display: flex;
     flex-direction: column;
-    font-size: 3vw;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage {
     display: flex;
@@ -843,20 +989,23 @@ body .wrapper .footer {
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn {
     flex: 0 1 50%;
-    padding: 4em 0px 4em 0px;
+    position: relative;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn_retro {
     flex: 0 1 33.333%;
-    padding: 4em 0px 4em 0px;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform {
-    flex: 1 0 auto;
     display: block;
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo {
-    margin: 4em 0px 4em 0px;
     display: block;
-    height: 5.5vw;
+    height: 20px;
     width: auto;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo img {
@@ -867,43 +1016,39 @@ body .wrapper .footer {
     width: auto;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform h1 {
-    font-size: 3vw;
-    margin: 0px auto 2em auto;
+    font-size: 12px;
+    line-height: 14px;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informtext {
-    font-size: 2.8vw;
+    font-size: 10px;
     line-height: 1.8em;
-    margin: 1em auto 0px auto;
+    width: 270px;
   }
   body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__vintageimg {
     display: none;
   }
   body .wrapper .content .content__column .content__about_twitter {
     flex: 0 0 333.333px;
-    font-size: 1.3vw;
-    padding: 0em 0px 0em 0px;
   }
   body .wrapper .content .content__column .content__about_twitter .conteiner {
-    height: 100%;
-    font-size: 3vw;
-    margin: 0px auto;
-    padding: 6em 0em;
+    height: 145px;
   }
   body .wrapper .content .content__column .content__about_twitter .conteiner .content__logo {
-    height: 5.5vw;
-    margin: 2em auto 2em auto;
+    height: 22px;
+    margin: 0em auto 1em auto;
   }
   body .wrapper .content .content__column .content__about_twitter .conteiner .content__logo img {
     height: 100%;
     width: auto;
   }
   body .wrapper .content .content__column .content__about_twitter .conteiner h1 {
-    font-size: 3vw;
+    font-size: 12px;
+    line-height: 14px;
     margin: 0 auto;
   }
   body .wrapper .content .content__column .content__about_twitter .conteiner .content__text {
-    width: 90%;
-    font-size: 2.8vw;
+    width: 100%;
+    font-size: 10px;
     line-height: 1.8em;
     margin: 1em auto 0px auto;
     text-align: center;
@@ -912,10 +1057,766 @@ body .wrapper .footer {
     flex: 1 0 1100px;
   }
   body .wrapper .content .content__column .content__shop .shop__column .shop__position {
+    flex: 0 0 1050px;
     flex-direction: column;
   }
-  body .wrapper .content .content__column .content__mail {
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .seats:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .stend:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_bottom:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_back:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_wheel:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_shop:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_right:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_left:hover .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__forms {
+    flex: 0 0 50px;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__forms a {
+    font-size: 2vw;
+    padding: 2% 2% 2% 2%;
+  }
+  body .wrapper .content .content__column .content__about_mail {
+    flex: 0 0 333.333px;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__logo {
+    height: 5.5vw;
+    margin: 3% auto 0% auto;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__logo img {
+    height: 100%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__text {
+    text-align: center;
+    font-family: "MYRIADPRO";
+    font-size: 2.8vw;
+    font-weight: 300;
+    color: rgba(51, 51, 51, 0.862745098);
+    margin: 2% 0% 0% 0%;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms {
+    height: 10vh;
+    display: block;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div .mail__e-mail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30%;
+    border-radius: 3%;
+    background: #f0efef;
+    color: #333333;
+    font-family: "MYRIADPRO";
+    font-weight: 300;
+    box-shadow: -1px 2px 20px -1px rgba(0, 0, 0, 0.4);
+    font-size: 2vw;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div .mail__e-mail::placeholder {
+    position: relative;
+    left: 3%;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div button {
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    width: 44.5%;
+    transform: translate(50%, 0%);
+    border-radius: 3%;
+    height: 40%;
+    background: rgb(11, 110, 92);
+    color: #ffffff;
+    font-family: "MYRIADPRO";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2vw;
+    transition-duration: 1s;
+  }
+  body .wrapper .footer {
+    flex: 0 0 50px;
+  }
+}
+@media (max-width: 1025px) and (min-width: 722px) {
+  body .wrapper .header {
+    flex: 0 0 100vh;
+    background: url(../IMG/bg.png) center center/cover no-repeat;
+  }
+  body .wrapper .header .conteiner {
+    width: 90%;
+  }
+  body .wrapper .header .conteiner .header__rov .header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4% 0% 0% 0%;
+  }
+  body .wrapper .header .conteiner .header__rov .header__list .header__items {
+    flex: 0 0 15%;
+    font-family: "MYRIADPRO";
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3pt;
+    text-align: center;
+    position: relative;
+  }
+  body .wrapper .header .conteiner .header__rov .header__list a {
+    color: #551A8B;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  body .wrapper .header .conteiner .header__rov .header__list a:hover {
+    color: rgb(11, 110, 92);
+    font-size: 1.2vw;
+    transition-duration: 500ms;
+  }
+  body .wrapper .header .conteiner .header__rov .header__list .header__items_logo {
+    flex: 0 1 5%;
+    align-self: center;
+    padding: 0px 0px 0px 0px;
+  }
+  body .wrapper .header .conteiner .header__rov .header__list .header__items_logo img {
+    width: 100%;
+    height: auto;
+  }
+  body .wrapper .header .conteiner .header__rov .header__burger {
+    display: none;
+  }
+  body .wrapper .header .conteiner .header__rov .header__logo_mobile {
+    display: none;
+  }
+  body .wrapper .header .conteiner .header__rov .header__table {
+    display: none;
+  }
+  body .wrapper .content {
     flex: 1 0 auto;
+  }
+  body .wrapper .content .content__column {
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrapper .content .content__column .content__about {
+    flex: 0 0 333.333px;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__about .conteiner {
+    height: 40%;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body .wrapper .content .content__column .content__about .conteiner .content__logo {
+    width: 30px;
+    margin: 0em auto 0px auto;
+  }
+  body .wrapper .content .content__column .content__about .conteiner .content__logo img {
+    width: 100%;
+    height: auto;
+  }
+  body .wrapper .content .content__column .content__about .conteiner h1 {
+    margin: 0em auto;
+    text-align: center;
+    font-family: "MYRIADPRO";
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #333333;
+  }
+  body .wrapper .content .content__column .content__about .conteiner .content__text {
+    text-align: center;
+    font-family: "MYRIADPRO";
+    font-size: 10px;
+    color: rgba(51, 51, 51, 0.5333333333);
+    line-height: 1.5em;
+  }
+  body .wrapper .content .content__column .content__work {
+    flex: 0 0 1000px;
+  }
+  body .wrapper .content .content__column .content__work .content__column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_boriosa {
+    flex-direction: row-reverse;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img {
+    flex: 0 0 66.667%;
+    position: relative;
+    background: url(../IMG/Img01.png) center center/cover no-repeat;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img_boriosa {
+    background: url(../IMG/8.png) center center/cover no-repeat;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img_retrofirst {
+    background: url(../IMG/bike3/Img01.png) center center/cover no-repeat;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img_retrosecond {
+    background: url(../IMG/bike3/Img02.png) center center/cover no-repeat;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__img .content__cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform {
+    flex: 0 1 66.667%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 0px;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo {
+    margin: 0px auto 0px auto;
+    height: 11px;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informlogo img {
+    height: 100%;
+    width: auto;
+    margin: 0px auto;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform h1 {
+    text-align: center;
+    font-family: "MYRIADPRO";
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__inform .content__informtext {
+    margin: 0px auto;
+    width: 200px;
+    font-family: "MYRIADPRO";
+    font-size: 8px;
+    line-height: 1.5em;
+    color: rgba(51, 51, 51, 0.5333333333);
+    text-align: center;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__vintageimg {
+    flex: 0 0 33.333%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage .content__vintagecolumn .content__vintageimg img {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_boriosa {
+    flex: 0 0 33.333%;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst {
+    flex: 0 0 33.333%;
+    order: 1;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst .content__cover {
+    opacity: 0;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 110, 92, 0.4);
+    z-index: 2;
+    transition-duration: 1s;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst .content__cover .content__logo_retro {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 5%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrofirst:hover .content__cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond {
+    flex: 0 0 33.333%;
+    order: 3;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond .content__cover {
+    opacity: 0;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 110, 92, 0.4);
+    z-index: 2;
+    transition-duration: 1s;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond .content__cover .content__logo_retro {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 5%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__img_retrosecond:hover .content__cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__work .content__column .content__vintage_retro .content__vintagecolumn_retro {
+    flex: 0 0 33.333%;
+    order: 2;
+  }
+  body .wrapper .content .content__column .content__about_twitter .conteiner {
+    height: 32%;
+  }
+  body .wrapper .content .content__column .content__about_twitter .conteiner h1 span {
+    font-size: 1.6vw;
+    font-weight: 300;
+    color: #333333;
+  }
+  body .wrapper .content .content__column .content__shop {
+    flex: 0 0 333.333px;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position {
+    flex: 0 0 27vh;
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .seats {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .seats .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .seats .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 10%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .seats:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .seats img {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .stend {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .stend .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .stend .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 10%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .stend:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_top .stend img {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_bottom {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_bottom .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_bottom .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 10%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_bottom:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__first .position__first_bottom img {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_back {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_back .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_back .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 5%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_back:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_back img {
+    max-width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_wheel {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_wheel .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_wheel .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 5%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_wheel:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__second .position__second_wheel img {
+    max-width: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_shop {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_shop .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_shop .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 10%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_shop:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_shop img {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_right {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_right .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_right .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 10%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_right:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_right img {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_left {
+    flex: 0 0 50%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_left .cover {
+    display: none;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_left .cover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 10%;
+    width: auto;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_left:hover .cover {
+    opacity: 1;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__position .position__third .position__third_bottom .position__third_left img {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__forms {
+    flex: 0 0 75px;
+    background: #282f35;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__forms a {
+    text-transform: uppercase;
+    font-family: "MYRIADPRO";
+    font-size: 1vw;
+    font-weight: 400;
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.9058823529);
+    padding: 1% 2% 1% 2%;
+    transition-duration: 1s;
+  }
+  body .wrapper .content .content__column .content__shop .shop__column .shop__forms a:hover {
+    background-color: #ffffff;
+    color: #282f35;
+    border: none;
+  }
+  body .wrapper .content .content__column .content__about_mail {
+    flex: 0 0 333.333px;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.333%;
+    height: 50%;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__logo {
+    width: 30px;
+    margin: 3% auto 0% auto;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__logo img {
+    width: 100%;
+    height: auto;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__text {
+    text-align: center;
+    font-family: "MYRIADPRO";
+    font-size: 1.6vw;
+    font-weight: 300;
+    color: rgba(51, 51, 51, 0.862745098);
+    margin: 8% 0% 0% 0%;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms {
+    height: 30px;
+    display: block;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div .mail__e-mail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 69%;
+    height: 100%;
+    border-radius: 3%;
+    background: #f0efef;
+    color: #333333;
+    font-family: "MYRIADPRO";
+    font-weight: 300;
+    box-shadow: -1px 2px 20px -1px rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div .mail__e-mail::placeholder {
+    position: relative;
+    left: 3%;
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30%;
+    border-radius: 3%;
+    height: 100%;
+    background: rgba(11, 110, 92, 0.4);
+    color: #ffffff;
+    font-family: "MYRIADPRO";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    transition-duration: 1s;
+    box-shadow: -1px 2px 20px -1px rgba(0, 0, 0, 0.4);
+  }
+  body .wrapper .content .content__column .content__about_mail .mail__column .mail__forms div button:hover {
+    background: rgb(11, 110, 92);
+  }
+  body .wrapper .footer {
+    flex: 0 0 80px;
+  }
+  body .wrapper .footer .conteiner {
+    height: 100%;
+  }
+  body .wrapper .footer .conteiner .footer__rov {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__text {
+    flex: 0 0 33.333%;
+    text-align: left;
+    align-items: center;
+    font-family: "MYRIADPRO";
+    font-size: 9px;
+    color: rgba(51, 51, 51, 0.5333333333);
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__socialicons {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0% 10% 0% 10%;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__twitter {
+    width: 2vw;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__twitter img {
+    height: auto;
+    width: 100%;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__facebook {
+    width: 2vw;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__facebook img {
+    height: auto;
+    width: 100%;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__pinterest {
+    width: 2vw;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__socialicons .socialicons__pinterest img {
+    height: auto;
+    width: 100%;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__logo {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__text {
+    line-height: 2vw;
+    margin: 0% 2% 0% 0%;
+    font-family: "MYRIADPRO";
+    font-size: 10px;
+    color: rgba(51, 51, 51, 0.5333333333);
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__logo {
+    height: 2vw;
+  }
+  body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__logo img {
+    height: 100%;
+    width: auto;
   }
 }
 
