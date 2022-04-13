@@ -852,7 +852,7 @@ body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__logo img {
     position: fixed;
     top: 30px;
     right: 3vw;
-    z-index: 2;
+    z-index: 10;
   }
   body .wrapper .header .conteiner .header__rov .header__burger:active {
     width: 40px;
