@@ -70,11 +70,11 @@ body .wrapper .header .conteiner .header__rov .header__list a {
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
+  transition-duration: 500ms;
 }
 body .wrapper .header .conteiner .header__rov .header__list a:hover {
   color: rgb(11, 110, 92);
-  font-size: 1.2vw;
-  transition-duration: 500ms;
+  font-weight: 700;
 }
 body .wrapper .header .conteiner .header__rov .header__list .header__items_logo {
   flex: 0 1 5%;
@@ -1202,8 +1202,7 @@ body .wrapper .footer .conteiner .footer__rov .footer__logo .logo__logo img {
   }
   body .wrapper .header .conteiner .header__rov .header__list a:hover {
     color: rgb(11, 110, 92);
-    font-size: 1.2vw;
-    transition-duration: 500ms;
+    font-weight: 700;
   }
   body .wrapper .header .conteiner .header__rov .header__list .header__items_logo {
     flex: 0 1 5%;
