@@ -40,10 +40,10 @@ body{
                             display: inline-block;
                             top: 50%;
                             transform: translateY(-50%);
+                            transition-duration: 500ms;
                             &:hover{
                                 color: rgba(11, 110, 92, 1);
-                                font-size: 1.2vw;
-                                transition-duration: 500ms;
+                                font-weight: 700;
                             }
                         }
                         .header__items_logo{
@@ -1266,8 +1266,7 @@ body{
                                 transform: translateY(-50%);
                                 &:hover{
                                     color: rgba(11, 110, 92, 1);
-                                    font-size: 1.2vw;
-                                    transition-duration: 500ms;
+                                    font-weight: 700;
                                 }
                             }
                             .header__items_logo{
