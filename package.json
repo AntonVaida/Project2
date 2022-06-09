@@ -13,7 +13,6 @@
   "author": "Anton Vaida",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AntonVaida/Project2/issues"
   },
   "dependencies": {
     "node-sass": "^7.0.1"
