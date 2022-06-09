@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/AntonVaida/Project2/issues"
   },
-  "homepage": "https://github.com/AntonVaida/Project2#readme",
   "dependencies": {
     "node-sass": "^7.0.1"
   }
